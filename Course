@@ -1,0 +1,162 @@
+Table of Contents
+Introduction to Python
+Variables and Data Types
+Operators in Python
+Control Flow (if-else, loops)
+Functions and Modules
+Data Structures (Lists, Tuples, Sets, Dictionaries)
+File Handling
+Object-Oriented Programming
+Error and Exception Handling
+Inbuilt Libraries Overview
+
+1. Introduction to Python
+What is Python?
+Python is a high-level, interpreted programming language known for its simplicity and readability.
+Installing Python
+Download Python from python.org.
+Verify installation by running python --version.
+Hello World Example:
+print("Hello, World!")
+
+2. Variables and Data Types
+Variables: Containers for storing data values.
+x = 10        # Integer
+y = 3.14      # Float
+name = "Alice"  # String
+is_active = True  # Boolean
+Data Types:
+Numbers: int, float, complex
+Text: str
+Boolean: bool
+None: NoneType
+a = 42         # int
+b = 3.14       # float
+c = "Python"    # str
+d = None       # NoneType
+
+3. Operators in Python
+Arithmetic Operators: +, -, *, /, %, //, **
+print(10 + 5)   # Addition
+print(10 ** 2)  # Exponentiation
+Comparison Operators: ==, !=, >, <, >=, <=
+Logical Operators: and, or, not
+Assignment Operators: =, +=, -=, etc.
+x = 5
+x += 3  # x = x + 3
+print(x)
+Membership Operators: in, not in
+fruits = ["apple", "banana"]
+print("apple" in fruits)  # True
+
+4. Control Flow
+If-Else Statements
+x = 10
+if x > 5:
+    print("x is greater than 5")
+elif x == 5:
+    print("x is equal to 5")
+else:
+    print("x is less than 5")
+Loops
+For Loop:
+for i in range(5):
+    print(i)  # Outputs 0 to 4
+While Loop:
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+Break and Continue:
+for i in range(10):
+    if i == 5:
+        break  # Exit loop
+    if i % 2 == 0:
+        continue  # Skip even numbers
+    print(i)
+
+5. Functions and Modules
+Functions
+# Function definition
+def greet(name):
+    return f"Hello, {name}!"
+
+# Function call
+print(greet("Alice"))
+Modules
+Importing Modules:
+import math
+print(math.sqrt(16))  # 4.0
+Creating Your Module:
+Save as mymodule.py:
+def add(a, b):
+    return a + b
+Import and use:
+import mymodule
+print(mymodule.add(2, 3))
+
+6. Data Structures
+Lists
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")  # Add item
+print(fruits)
+Tuples
+tuple_data = (1, 2, 3)
+print(tuple_data[0])
+Sets
+unique_items = {1, 2, 3, 3}
+print(unique_items)  # {1, 2, 3}
+Dictionaries
+person = {"name": "Alice", "age": 25}
+print(person["name"])
+
+7. File Handling
+# Writing to a file
+with open("example.txt", "w") as file:
+    file.write("Hello, World!")
+
+# Reading from a file
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+8. Object-Oriented Programming (OOP)
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print(f"Hi, I'm {self.name} and I'm {self.age} years old.")
+
+person = Person("Alice", 25)
+person.greet()
+
+9. Error and Exception Handling
+try:
+    x = int(input("Enter a number: "))
+    print(10 / x)
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+except ValueError:
+    print("Invalid input!")
+finally:
+    print("Execution complete.")
+
+10. Inbuilt Libraries Overview
+Math Library
+import math
+print(math.pi)
+print(math.factorial(5))
+Random Library
+import random
+print(random.randint(1, 10))
+Datetime Library
+import datetime
+now = datetime.datetime.now()
+print(now.strftime("%Y-%m-%d %H:%M:%S"))
+OS Library
+import os
+print(os.getcwd())  # Get current working directory
+
+
