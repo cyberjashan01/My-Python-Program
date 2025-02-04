@@ -1,0 +1,23 @@
+def print_square(size):
+    for i in range(size): print("* " * size)
+
+def print_rectangle(width, height):
+    for i in range(height): print("* " * width)
+
+def print_triangle(height):
+    for i in range(1, height + 1): print("* " * i)
+
+shape = input("Enter shape (square, rectangle, triangle): ").lower()
+
+if shape == "square":
+    size = int(input("Enter size: "))
+    print_square(size)
+elif shape == "rectangle":
+    width = int(input("Enter width: "))
+    height = int(input("Enter height: "))
+    print_rectangle(width, height)
+elif shape == "triangle":
+    height = int(input("Enter height: "))
+    print_triangle(height)
+else:
+    print("Invalid shape.")
