@@ -1,0 +1,13 @@
+# For Loop
+number = 18
+print(f"\nTimes Table for {number} using for loop:")
+for i in range(1, 11):
+    print(f"{number} x {i} = {number * i}")
+
+# While loop
+number = 24
+print(f"\nTimes Table for {number} using while loop:")
+i = 1
+while i <= 10:
+    print(f"{number} x {i} = {number * i}")
+    i += 1
