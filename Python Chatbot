@@ -1,0 +1,16 @@
+print("Chatbot: Hello! I am your chatbot. Type 'exit' to end the chat.")
+responses = {
+    "hi": "Hello! How can I assist you today?",
+    "hello": "Hi there! What can I do for you?",
+    "how are you": "I'm just a program, but I'm doing fine. How about you?",
+    "your name": "I'm Chatbot, your virtual assistant.",
+    "bye": "Goodbye! Have a great day!",
+}
+
+while True:
+    user_input = input("You: ").strip().lower()
+    if user_input == "exit":
+        print("Chatbot: Goodbye! It was nice talking to you.")
+        break
+    response = responses.get(user_input, "I'm sorry, I don't understand that.")
+    print(f"Chatbot: {response}")
