@@ -1,0 +1,9 @@
+def factorial_while_loop(n):
+    result = 1
+    i = 1
+    while i <= n:
+        result *= i
+        i += 1
+    return result
+number = int(input("Enter a number to find its factorial: "))
+print(f"The factorial of {number} using while loop is: {factorial_while_loop(number)}")
